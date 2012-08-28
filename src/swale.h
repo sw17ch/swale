@@ -27,8 +27,12 @@ typedef struct swale_task_h {
 typedef struct swale_h {
   swale_task_t * head;
   swale_task_t * tail;
+  swale_task_t * next_task;
 } swale_t;
 
+/*
+ */
+void SwaleInit(swale_t * swale);
 
 /*
  */
