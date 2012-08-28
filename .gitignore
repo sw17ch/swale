@@ -10,3 +10,12 @@
 *.lai
 *.la
 *.a
+
+# Unversioned Ruby files
+Gemfile.lock
+
+# Unversioned Ceedling files
+build/artifacts/*
+build/logs/*
+build/temp/*
+build/test/*
