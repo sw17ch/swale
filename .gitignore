@@ -22,3 +22,6 @@ build/test/*
 
 # Unversioned VIM files
 .*.swp
+
+# Tag file(s)
+tags
