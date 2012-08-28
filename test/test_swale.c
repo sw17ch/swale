@@ -19,6 +19,10 @@ void test_SwaleInit_sets_head_and_tail_to_null(void) {
   TEST_ASSERT_EQUAL(24, sizeof(swale_t));
 }
 
+void test_SwaleInit_accepts_a_get_time_callback(void) {
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
 void test_SwaleTaskInit_fills_in_a_task(void) {
   swale_task_t task;
   uint32_t a_param = 99;
@@ -31,6 +35,14 @@ void test_SwaleTaskInit_fills_in_a_task(void) {
 
   /* Ensure we catch when the size of swale_task_t changes. */
   TEST_ASSERT_EQUAL(24, sizeof(swale_task_t));
+}
+
+void test_SwaleTaskInit_accepts_a_task_period(void) {
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
+void test_SwaleTaskInit_accepts_a_phase(void) {
+  TEST_IGNORE_MESSAGE("implement me");
 }
 
 void test_SwaleRegisterTask_should_set_head_and_tail_if_no_head(void) {
@@ -115,3 +127,27 @@ void test_SwaleProcess_calls_one_task_per_call_in_order_of_list(void) {
   SwaleProcess(&swale);
 }
 
+void test_SwaleProcess_supports_scheduling_based_on_ticks(void)
+{
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
+void test_SwaleProcess_updates_swale_state(void)
+{
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
+void test_SwaleGetState_provides_copy_of_state_info(void)
+{
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
+void test_SwaleValidate_ensures_consistency_of_tasks(void)
+{
+  TEST_IGNORE_MESSAGE("implement me");
+}
+
+void test_SwaleGetTime_is_the_current_system_tick_time(void)
+{
+  TEST_IGNORE_MESSAGE("implement me");
+}
