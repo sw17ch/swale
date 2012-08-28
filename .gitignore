@@ -19,3 +19,6 @@ build/artifacts/*
 build/logs/*
 build/temp/*
 build/test/*
+
+# Unversioned VIM files
+.*.swp
